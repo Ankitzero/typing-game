@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!---<link rel="stylesheet" href="css/style.css">--->
+<title>Bubble Hit</title>
+<style>
+body{
+background-color:navyblue;
+}
+input{
+background-color:black;
+color:white;
+}
+</style>
+</head>
+
+
+<body>
+<!---<img id="scream" src="img.png" alt="The Scream" width="500" height="1000" style="display:none">--->
+<audio id="correctAudio">
+<source src="correct.mp3" type="audio/mpeg">
+<p>sorry your browser not support it</p>
+</audio>
+<audio id="wrongAudio">
+<source src="wrong.mp3" type="audio/mpeg">
+<p>sorry your browser not support it</p>
+</audio>
+<audio id="gameOver">
+<source src="gameOver.mp3" type="audio/mpeg">
+<p>sorry your browser not support it</p>
+</audio>
+<audio id="resetGame">
+<source src="reset.mp3" type="audio/mpeg">
+<p>sorry your browser not support it</p>
+</audio>
+<audio id="mainGame" loop="true">
+<source src="mainGame.mp3" type="audio/mpeg">
+<p>sorry your browser not support it</p>
+</audio>
+<div class="container-fluid bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Bubble Hit</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+	  <li class="nav-item active">
+		<button class="btn btn-outline-success" type="button" id="nonError">Correct</button> 
+	  </li>
+	  <li class="nav-item">
+		<button class="btn btn-outline-danger" type="button" id="yesError">Wrong</button>
+	  </li>
+	<!---  <li class="nav-item">
+		<button class="btn btn-outline-success" type="button" id="zxc">Timer</button>
+	  </li> --->
+	  <li class="nav-item">
+		<button class="btn btn-outline-success" type="button" onclick="pro();">Reset</button>
+	  </li>
+	</ul>
+	<form class="form-inline my-2 my-lg-0">
+	  <li class="nav-item">
+		<button class="btn btn-outline-danger" type="button" id="zxc">Timer</button>
+	  </li>
+	
+		</form>
+  </div>
+</nav>
+</div>
+
+
+
+
+
+
+<div class="container-fluid bg-light">
+
+
+
+<!---<section align="center">		
+this is canvas area 
+<div class="three">--->
+<canvas id="canvas" height="510" width="1334">
+</canvas>
+<!----</div>--->
+<!---this is input area--->
+<!----<div class="two" align="center">---->
+<!---<input type="color" id="favcolor" value="#000000" onmouseout="myFunction();">
+<button onclick="eraser();">ERASER</button>
+<button onclick="fillcanvas();">BACKGROUND COLOR</button>
+<select id="brush" name="size" onchange="brushsize();">
+<option value="5">5</option>
+   
+ <option value="10">10</option>
+  
+  <option value="15">15</option>
+  
+  <option value="20">20</option>
+   
+ <option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+</select>
+<button id="testing">home</button>
+--->
+
+
+<!----<input id="fineit" class="uqe" type="text" placeholder="TEXT AREA" onchange="textsee();">---->
+</div>
+<!---</section>--->
+<!----<input type="text" id="userInput" onkeyup="hellobro(this);" onchange="textsee();" onfocus="myTimer = setInterval(myCounter, 1000);" onblur="clearInterval(myTimer);" value="" placeholder="TYPE go for start">--->
+  <div class="form-group">
+	
+	<input type="text" class="form-control" id="userInput" onkeyup="hellobro(this);" onchange="textsee();" onfocus="myTimer = setInterval(myCounter, 1000);" onblur="clearInterval(myTimer);" value="" placeholder="TYPE go for start">
+
+  </div>
+
+<!-----<p id="demo">go</p>--->
+<input type="hidden" id="poi" value="go">
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/popper.js"></script>
+<script type="text/javascript" src="test_elephant.js">
+</script>
+</body>
+</html>
